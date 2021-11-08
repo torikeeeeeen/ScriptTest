@@ -43,6 +43,11 @@ public class Boss
 
 public class Test : MonoBehaviour
 {
+
+    // 発展：魔法を使う回数
+    private int count = 10; //魔法を使う回数
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -77,9 +82,7 @@ public class Test : MonoBehaviour
         // 防御用の関数呼び出し
         lastboss.Defence(3);
 
-        // 魔法を10回使う
-        int count = 10; //魔法を使う回数
-
+        // 魔法攻撃を指定回数だけ繰り返し行う
         for (int i = 0; i < count; i++)
         {
             //魔法攻撃用の関数呼び出し
